@@ -1,10 +1,3 @@
-/* 
- * File:   newmain.c
- * Author: Redes
- *
- * Created on 15 de julio de 2015, 21:17
- */
-
 /*
 Reloj contador
 1 al pulsar 2 seg entra al menu config
@@ -98,13 +91,13 @@ void main(void)
 	UnidadSegundos=0;
 	DecenaSegundos=0;
 	PreEstado=0;
-	TRISB=0b00000000;
-	ADCON1=0x0F;
+	TRISB=0b00000000; //configuro el puerto b como salida
+	ADCON1=0x0F; //configuro los pines como digitales
 	TRISA=0b00000100; //RA1 Y RA2 como entrada
 	LATA=0;
 	//Activamos Displays
 	LATAbits.LATA0=1;
-	LATAbits.LATA1=0;
+	LATAbits.LATA1=0; //
 	LATAbits.LATA3=1;
 	LATB = Display_Tabla[0];
 	
@@ -122,9 +115,8 @@ void main(void)
 
 		while(Switch!=1) {
 
-				delayUnSegundo();
-				//sumarUnidades();
-				sumarUnidadSegundos();
+			delayUnSegundo();
+			sumarUnidadSegundos();
 		}
 		
 				
@@ -136,8 +128,6 @@ void main(void)
 				break;
 			}
 		}
-
-
 
 
 		// if(A == 21){
@@ -284,17 +274,19 @@ void Interrupcion(void)
 		if(LATAbits.LATA0==1)
 			{
 			LATAbits.LATA0=0;
-			LATB=Display_Tabla[UnidadSegundos];
+			// LATB=Display_Tabla[9];
+			LATB=Display_Tabla[DecenaSegundos];
 			LATAbits.LATA1=1;
 			}
 		else
 			{
 			LATAbits.LATA1=0;
-			// LATB=Display_Tabla[DecenaSegundos];
+			// LATB=Display_Tabla[8];
+			LATB=Display_Tabla[UnidadSegundos];
 			LATAbits.LATA0=1;
 			}
 	TMR0H=0;
-	TMR0L=250; // De 177 (20 ms) para abajo empieza a aparecer el efecto visual del parpadeo
+	TMR0L=150; // De 177 (20 ms) para abajo empieza a aparecer el efecto visual del parpadeo
 	}
 }
 #endif
