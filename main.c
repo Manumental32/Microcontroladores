@@ -48,6 +48,9 @@ unsigned char UnidadAnio;
 unsigned char DecenaAnio;
 
 unsigned char A;
+unsigned char B;
+unsigned char C;
+unsigned char ModoConfig;
 unsigned char PreEstado;
 
 /*Prototipos*/
@@ -95,6 +98,8 @@ void main(void)
 	ADCON1=0x0F; //configuro los pines como digitales
 	TRISA=0b00000100; //RA1 Y RA2 como entrada
 	LATA=0;
+	ModoConfig = 0;
+
 	//Activamos Displays
 	LATAbits.LATA0=1;
 	LATAbits.LATA1=0; //
@@ -114,36 +119,53 @@ void main(void)
 	while(1){
 
 		while(Switch!=1) {
-
 			delayUnSegundo();
 			sumarUnidadSegundos();
 		}
 		
-				
 
 		A = 0;
 		for(A;A <=20;A++) {
-			sumarDecenaSegundos(); //para probar si anda el boton
-			Delay1KTCYx(50);
-			if(Switch == 0){
+			//sumarDecenaSegundos(); //para probar si anda el boton
+			Delay1KTCYx(100);
+			if(Switch!=1){
 				break;
 			}
 		}
 
 
-		// if(A == 21){
-		// 	while(Switch==1) {
-		// 		sumarDecenaSegundos();
-		// 	}
-		// 	Delay1KTCYx(200); //no tocar
+		if(A == 21){ //pasaron 2 segundos
 
-		// } else {
+			ModoConfig = 1;
 
-		// 	//sumarUnidades();
-		// 	sumarUnidadSegundos();
-		// 	while(Switch!=0);
-		// 	Delay1KTCYx(50);
-		// }
+			// entra a modo config
+			while(ModoConfig == 1){
+
+				while(Switch!=1); //ciclo infinito hasta que presione
+
+				while(Switch==1) {
+
+					B = 0;
+					for(B;B <=200;B++) {
+						Delay1KTCYx(20);
+						if(Switch!=1){ //si suelta el boton antes de los 4 segundos
+							break;
+						}
+					}
+
+					if(B == 201){ //pasaron 4 segundos
+						//salgo modo config
+						ModoConfig = 0;
+					}
+					
+					delayUnSegundo();
+					sumarDecenaSegundos(); //esto debe variar depende la posicion
+
+				}
+				Delay1KTCYx(200); //no tocar
+			}
+
+		} 
 
 	};
 

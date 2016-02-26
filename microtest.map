@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Jan 17 23:19:14 2016
+Linker Map File - Created Fri Feb 26 00:51:42 2016
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -20,7 +20,7 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
          .romdata_c018i.o    romdata   0x00010a    program   0x000000
          .idata_c018i.o_i    romdata   0x00010a    program   0x000000
            Contador_Tabla    romdata   0x000180    program   0x000016
-             .code_main.o       code   0x000196    program   0x0002c4
+             .code_main.o       code   0x000196    program   0x000330
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
     .config_300005_main.o    romdata   0x300005    program   0x000001
@@ -28,12 +28,12 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                 MATH_DATA      udata   0x000000       data   0x000002
                  .tmpdata      udata   0x000002       data   0x000002
                 DELAYDAT1      udata   0x000004       data   0x000001
-            .udata_main.o      udata   0x000080       data   0x00000e
-           .udata_c018i.o      udata   0x00008e       data   0x00000a
-           .idata_c018i.o      idata   0x000098       data   0x000000
-            .idata_main.o      idata   0x000098       data   0x000000
-          .udata___init.o      udata   0x000098       data   0x000000
-          .idata___init.o      idata   0x000098       data   0x000000
+            .udata_main.o      udata   0x000080       data   0x000011
+           .udata_c018i.o      udata   0x000091       data   0x00000a
+           .idata_c018i.o      idata   0x00009b       data   0x000000
+            .idata_main.o      idata   0x00009b       data   0x000000
+          .udata___init.o      udata   0x00009b       data   0x000000
+          .idata___init.o      idata   0x00009b       data   0x000000
                    .stack      udata   0x000e00       data   0x000100
             SFR_UNBANKED0      udata   0x000f80       data   0x000080
 
@@ -43,11 +43,11 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000109      
-                            0x000180    0x000459      
+                            0x000180    0x0004c5      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300005    0x300006      
-            1000 out of 66584 program addresses used, program memory utilization is 1%
+            1108 out of 66584 program addresses used, program memory utilization is 1%
 
 
 
@@ -59,9 +59,9 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
               Delay1KTCYx   0x0000ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
                  Dias_Mes   0x00018a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
             Display_Tabla   0x000180    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-             Interrupcion   0x0003ee    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+             Interrupcion   0x00045a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
            Interrupciones   0x000008    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-              Timer0_Init   0x0003dc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+              Timer0_Init   0x000448    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
         _D1KTCYXCODE_0010   0x0000bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
         _D1KTCYXCODE_0016   0x0000c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        ___return_lbl00000   0x00000c    program     static                          
@@ -80,23 +80,23 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                 compare_l   0x0000e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 copy_loop   0x000080    program     static                          
             copy_one_byte   0x000086    program     static                          
-                  dameDia   0x00035c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameMes   0x00039c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-           delayUnSegundo   0x0001f2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameDia   0x0003c8    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameMes   0x000408    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+           delayUnSegundo   0x00025e    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      done   0x0000aa    program     static                          
              done_copying   0x000094    program     static                          
                      loop   0x0000fc    program     static                          
                    loop_h   0x0000da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    loop_l   0x0000e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      main   0x000196    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarAnio   0x00034a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarDecenaMinutos   0x000266    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarDecenaSegundos   0x000254    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-               sumarFecha   0x0002b4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarHora   0x00028a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                 sumarMes   0x000316    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarUnidadMinutos   0x000278    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarUnidadSegundos   0x000242    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarAnio   0x0003b6    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarDecenaMinutos   0x0002d2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarDecenaSegundos   0x0002c0    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+               sumarFecha   0x000320    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarHora   0x0002f6    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                 sumarMes   0x000382    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarUnidadMinutos   0x0002e4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarUnidadSegundos   0x0002ae    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      test   0x000028    program     static                          
                zero_block   0x0000da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                         A   0x00008c       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
@@ -109,11 +109,13 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                        B   0x00008d       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                   BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                       BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                        C   0x00008e       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -189,6 +191,7 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+               ModoConfig   0x00008f       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                    OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -233,7 +236,7 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                     PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PreEstado   0x00008d       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                PreEstado   0x000090       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -304,10 +307,10 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                 __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
                   __tmp_0   0x000002       data     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                curr_byte   0x000091       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000093       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x000095       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                     prom   0x00008e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x000094       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x000096       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000098       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     prom   0x000091       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
 
 
 
@@ -342,19 +345,19 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
             Display_Tabla   0x000180    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                  Dias_Mes   0x00018a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      main   0x000196    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-           delayUnSegundo   0x0001f2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarUnidadSegundos   0x000242    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarDecenaSegundos   0x000254    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarDecenaMinutos   0x000266    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarUnidadMinutos   0x000278    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarHora   0x00028a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-               sumarFecha   0x0002b4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                 sumarMes   0x000316    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarAnio   0x00034a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameDia   0x00035c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameMes   0x00039c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-              Timer0_Init   0x0003dc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-             Interrupcion   0x0003ee    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+           delayUnSegundo   0x00025e    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarUnidadSegundos   0x0002ae    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarDecenaSegundos   0x0002c0    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarDecenaMinutos   0x0002d2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarUnidadMinutos   0x0002e4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarHora   0x0002f6    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+               sumarFecha   0x000320    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                 sumarMes   0x000382    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarAnio   0x0003b6    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameDia   0x0003c8    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameMes   0x000408    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+              Timer0_Init   0x000448    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+             Interrupcion   0x00045a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_0   0x300001    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_1   0x300003    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_2   0x300005    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
@@ -377,23 +380,26 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                UnidadAnio   0x00008a       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                DecenaAnio   0x00008b       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                         A   0x00008c       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                PreEstado   0x00008d       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                     prom   0x00008e       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                curr_byte   0x000091       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-               curr_entry   0x000093       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
-                 data_ptr   0x000095       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                        B   0x00008d       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                        C   0x00008e       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+               ModoConfig   0x00008f       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                PreEstado   0x000090       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                     prom   0x000091       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x000094       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x000096       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000098       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
                 PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTD   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 PORTDbits   0x000f83       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -402,22 +408,22 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                      LATD   0x000f8c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  LATEbits   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      LATE   0x000f8d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                  DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                     DDRD   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                 DDRDbits   0x000f95       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TRISE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 TRISEbits   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      DDRE   0x000f96       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -458,23 +464,23 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                 CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
               CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -482,15 +488,15 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                   SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -509,8 +515,8 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
               HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
@@ -550,8 +556,8 @@ Linker Map File - Created Sun Jan 17 23:19:14 2016
                   INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
-                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                     PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
