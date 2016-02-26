@@ -51,6 +51,8 @@ unsigned char A;
 unsigned char B;
 unsigned char C;
 unsigned char ModoConfig;
+unsigned char SwitchAux;
+
 unsigned char PreEstado;
 
 /*Prototipos*/
@@ -99,6 +101,7 @@ void main(void)
 	TRISA=0b00000100; //RA1 Y RA2 como entrada
 	LATA=0;
 	ModoConfig = 0;
+	SwitchAux = 0;
 
 	//Activamos Displays
 	LATAbits.LATA0=1;
@@ -118,10 +121,13 @@ void main(void)
 
 	while(1){
 
+		SwitchAux = 0;
+
 		while(Switch!=1) {
 			delayUnSegundo();
 			sumarUnidadSegundos();
 		}
+		Switch = 0;
 		
 
 		A = 0;
@@ -129,6 +135,7 @@ void main(void)
 			//sumarDecenaSegundos(); //para probar si anda el boton
 			Delay1KTCYx(100);
 			if(Switch!=1){
+				Switch = 0;
 				break;
 			}
 		}
