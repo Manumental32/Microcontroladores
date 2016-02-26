@@ -102,8 +102,8 @@ void main(void)
 	LATB = Display_Tabla[0];
 	
 
-	LATAbits.LATA2=1;
-	LATC = Display_Tabla[0];
+	// LATAbits.LATA2=1;
+	// LATC = Display_Tabla[0];
 
 
 	Timer0_Init();
@@ -123,6 +123,7 @@ void main(void)
 
 		A = 0;
 		for(A;A <=20;A++) {
+			sumarDecenaSegundos(); //para probar si anda el boton
 			Delay1KTCYx(50);
 			if(Switch == 0){
 				break;
@@ -286,7 +287,7 @@ void Interrupcion(void)
 			LATAbits.LATA0=1;
 			}
 	TMR0H=0;
-	TMR0L=150; // De 177 (20 ms) para abajo empieza a aparecer el efecto visual del parpadeo
+	TMR0L=225; // De 177 (20 ms) para abajo empieza a aparecer el efecto visual del parpadeo
 	}
 }
 #endif

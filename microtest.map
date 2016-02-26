@@ -1,5 +1,5 @@
 MPLINK 5.00, LINKER
-Linker Map File - Created Sun Jan 17 21:17:13 2016
+Linker Map File - Created Sun Jan 17 23:19:14 2016
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -20,7 +20,7 @@ Linker Map File - Created Sun Jan 17 21:17:13 2016
          .romdata_c018i.o    romdata   0x00010a    program   0x000000
          .idata_c018i.o_i    romdata   0x00010a    program   0x000000
            Contador_Tabla    romdata   0x000180    program   0x000016
-             .code_main.o       code   0x000196    program   0x0002d2
+             .code_main.o       code   0x000196    program   0x0002c4
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
     .config_300005_main.o    romdata   0x300005    program   0x000001
@@ -43,11 +43,11 @@ Linker Map File - Created Sun Jan 17 21:17:13 2016
                                Start         End      
                            ---------   ---------      
                             0x000000    0x000109      
-                            0x000180    0x000467      
+                            0x000180    0x000459      
                             0x300001    0x300001      
                             0x300003    0x300003      
                             0x300005    0x300006      
-            1014 out of 66584 program addresses used, program memory utilization is 1%
+            1000 out of 66584 program addresses used, program memory utilization is 1%
 
 
 
@@ -59,9 +59,9 @@ Linker Map File - Created Sun Jan 17 21:17:13 2016
               Delay1KTCYx   0x0000ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
                  Dias_Mes   0x00018a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
             Display_Tabla   0x000180    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-             Interrupcion   0x0003fc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+             Interrupcion   0x0003ee    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
            Interrupciones   0x000008    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-              Timer0_Init   0x0003ea    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+              Timer0_Init   0x0003dc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
         _D1KTCYXCODE_0010   0x0000bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
         _D1KTCYXCODE_0016   0x0000c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d1ktcyx.asm
        ___return_lbl00000   0x00000c    program     static                          
@@ -80,23 +80,23 @@ Linker Map File - Created Sun Jan 17 21:17:13 2016
                 compare_l   0x0000e2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                 copy_loop   0x000080    program     static                          
             copy_one_byte   0x000086    program     static                          
-                  dameDia   0x00036a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameMes   0x0003aa    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-           delayUnSegundo   0x000200    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameDia   0x00035c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameMes   0x00039c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+           delayUnSegundo   0x0001f2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      done   0x0000aa    program     static                          
              done_copying   0x000094    program     static                          
                      loop   0x0000fc    program     static                          
                    loop_h   0x0000da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                    loop_l   0x0000e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                      main   0x000196    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarAnio   0x000358    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarDecenaMinutos   0x000274    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarDecenaSegundos   0x000262    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-               sumarFecha   0x0002c2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarHora   0x000298    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                 sumarMes   0x000324    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarUnidadMinutos   0x000286    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarUnidadSegundos   0x000250    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarAnio   0x00034a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarDecenaMinutos   0x000266    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarDecenaSegundos   0x000254    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+               sumarFecha   0x0002b4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarHora   0x00028a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                 sumarMes   0x000316    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarUnidadMinutos   0x000278    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarUnidadSegundos   0x000242    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      test   0x000028    program     static                          
                zero_block   0x0000da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f4620.asm
                         A   0x00008c       data     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
@@ -342,19 +342,19 @@ Linker Map File - Created Sun Jan 17 21:17:13 2016
             Display_Tabla   0x000180    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                  Dias_Mes   0x00018a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                      main   0x000196    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-           delayUnSegundo   0x000200    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarUnidadSegundos   0x000250    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-      sumarDecenaSegundos   0x000262    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarDecenaMinutos   0x000274    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-       sumarUnidadMinutos   0x000286    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarHora   0x000298    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-               sumarFecha   0x0002c2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                 sumarMes   0x000324    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                sumarAnio   0x000358    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameDia   0x00036a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-                  dameMes   0x0003aa    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-              Timer0_Init   0x0003ea    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
-             Interrupcion   0x0003fc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+           delayUnSegundo   0x0001f2    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarUnidadSegundos   0x000242    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+      sumarDecenaSegundos   0x000254    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarDecenaMinutos   0x000266    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+       sumarUnidadMinutos   0x000278    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarHora   0x00028a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+               sumarFecha   0x0002b4    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                 sumarMes   0x000316    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                sumarAnio   0x00034a    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameDia   0x00035c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+                  dameMes   0x00039c    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+              Timer0_Init   0x0003dc    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
+             Interrupcion   0x0003ee    program     extern C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_0   0x300001    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_1   0x300003    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
                __config_2   0x300005    program     static C:\Users\manum_000\Documents\Facultad\5to\Microcontroladores\TP-Microcontroladores\main.c
